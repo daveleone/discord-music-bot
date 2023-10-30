@@ -196,5 +196,5 @@ async def on_ready():
     await setup()
     
 if __name__ == "__main__":
-    TOKEN = os.getevn('TOKEN')
+    TOKEN = os.getenv('TOKEN')
     bot.run(TOKEN)
