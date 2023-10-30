@@ -195,13 +195,6 @@ async def setup():
 async def on_ready():
     await setup()
     
-@bot.slash_command(name = 'badge', guild_ids=[859497732673896458])
-async def claim_badge(interaction: nextcord.Interaction):
-    """
-    Use this command to claim the active developer badge
-    """
-    # Code to claim the badge goes here
-    await interaction.response.send_message("Badge claimed!")
-
 if __name__ == "__main__":
-    bot.run('')
+    TOKEN = os.getevn('TOKEN')
+    bot.run(TOKEN)
